@@ -20,6 +20,3 @@ json.followerCount user.followers.length || 0
 json.followingCount user.following.length || 0
 
 json.followedByCurrentUser user.followers.include?(current_user) || user === current_user
-
-
-
