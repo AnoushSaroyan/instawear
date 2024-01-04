@@ -3,6 +3,9 @@ services:
   db:
     image: postgres
     # set up a volume so our database info persists
+    environment:
+      # allows all connections without a password
+      POSTGRES_HOST_AUTH_METHOD: trust
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
   web:
