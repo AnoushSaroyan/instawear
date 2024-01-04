@@ -3,8 +3,7 @@ build:
     web: Dockerfile.web
     # Include other services if needed, like 'frontend'
   # Specify any build args if necessary
-release:
-  # Include any release phase commands if necessary
+release: {}
 run:
   web: bundle exec puma -C config/puma.rb
   # Specify other process types if necessary
