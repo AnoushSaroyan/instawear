@@ -1,6 +1,7 @@
 build:
   docker:
     web: Dockerfile.web
+    frontend: Dockerfile.frontend
     # Include other services if needed, like 'frontend'
   # Specify any build args if necessary
 release: {}
